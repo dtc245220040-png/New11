@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành bảng trong CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fa;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid #cbd5e1;
+        }
+
+        th {
+            background-color: #2563eb;
+            color: white;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            padding: 12px;
+        }
+
+        td {
+            height: 45px;
+            padding: 12px;
+            color: #334155;
+            vertical-align: middle;
+        }
+
+        td:nth-child(2) {
+            text-align: center;
+        }
+
+        td:nth-child(3) {
+            text-align: center;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #eff6ff;
+        }
+
+        tr:hover td {
+            background-color: #dbeafe;
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách sinh viên</h1>
+
+    <table>
+        <tr>
+            <th>Họ tên</th>
+            <th>Tuổi</th>
+            <th>Lớp</th>
+        </tr>
+        <tr>
+            <td>Nguyễn Văn An</td>
+            <td>20</td>
+            <td>Web</td>
+        </tr>
+        <tr>
+            <td>Trần Thị Bình</td>
+            <td>21</td>
+            <td>Web</td>
+        </tr>
+        <tr>
+            <td>Lê Minh Cường</td>
+            <td>20</td>
+            <td>ATTT K23</td>
+        </tr>
+        <tr>
+            <td>Phạm Thu Hà</td>
+            <td>22</td>
+            <td>Web</td>
+        </tr>
+    </table>
+</body>
+</html>
